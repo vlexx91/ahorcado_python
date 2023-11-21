@@ -2,7 +2,7 @@
 
 def ahorcado ():
 
-    palabra_oculta = "depresion"
+    palabra_oculta = "algoritmo"
 
     adivinanza = ["_", "_", "_", "_", "_", "_", "_", "_", "_"]
 
@@ -27,13 +27,13 @@ def ahorcado ():
                 if palabra_oculta[i] == letra:
                     adivinanza[i] = letra
 
-            print("acertaste gorfo")
+            print("acertaste una letra!")
 
         else:
             intentos -= 1
 
             #con f delante del print puedo usar {} para mostrar el numero de intentos
-            print(f"perdiste una vida gorfo, te quedan {intentos} intentos")
+            print(f"perdiste una vida, te quedan {intentos} intentos")
 
         #"Adivinanza actual:": Esto es simplemente una cadena de texto que se imprime antes de mostrar la adivinanza actual.
         #Sirve como una especie de encabezado para que el jugador sepa qué está viendo.
@@ -47,10 +47,10 @@ def ahorcado ():
     #fin del juego (el usuario ha ganado)
 
     if intentos == 0:
-        print("perdiste boludo")
+        print("perdiste!")
 
     if "_" not in adivinanza:
-        print("ganaste malparido")
+        print("ganaste!")
 
 ahorcado()
 
